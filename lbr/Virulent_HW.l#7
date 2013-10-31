@@ -13762,9 +13762,44 @@ University</text>
 <pin name="G@1" x="-7.62" y="7.62" length="short"/>
 <pin name="R@2" x="-7.62" y="2.54" length="short"/>
 <pin name="B@3" x="-7.62" y="-2.54" length="short"/>
-<pin name="V+@4" x="-7.62" y="-7.62" length="short" direction="pwr"/>
+<pin name="V+@4" x="-7.62" y="-7.62" length="short"/>
 <text x="-5.08" y="-12.7" size="1.778" layer="94">&gt;NAME</text>
 <text x="-5.08" y="10.922" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SN74ACT14">
+<wire x1="-12.7" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="17.78" x2="2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="2Y@4" x="-15.24" y="0" length="short"/>
+<pin name="2A@3" x="-15.24" y="5.08" length="short"/>
+<pin name="1Y@2" x="-15.24" y="10.16" length="short"/>
+<pin name="1A@1" x="-15.24" y="15.24" length="short"/>
+<pin name="3A@5" x="-15.24" y="-5.08" length="short"/>
+<pin name="3Y@6" x="-15.24" y="-10.16" length="short"/>
+<pin name="GND@7" x="-15.24" y="-15.24" length="short" direction="pwr"/>
+<pin name="VCC@14" x="15.24" y="15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="6A@13" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="6Y@12" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="5A@11" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="5Y@10" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="4A@9" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="4Y@8" x="15.24" y="-15.24" length="short" rot="R180"/>
+<wire x1="2.54" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94" curve="-233.130102"/>
+<text x="-12.7" y="-20.32" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="18.796" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="CTX958">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="1@1" x="-10.16" y="2.54" length="short"/>
+<pin name="GND0@2" x="-10.16" y="-2.54" length="short"/>
+<pin name="3@3" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="GND1@4" x="10.16" y="2.54" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -19118,9 +19153,54 @@ DIODES INC
 </device>
 </devices>
 </deviceset>
-<deviceset name="MSL0201RGB">
+<deviceset name="MSL0201RGB" prefix="RGB">
 <gates>
 <gate name="G$1" symbol="MSL0201RGB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="W15" package="MSL0201RGB">
+<connects>
+<connect gate="G$1" pin="B@3" pad="P$3"/>
+<connect gate="G$1" pin="G@1" pad="P$1"/>
+<connect gate="G$1" pin="R@2" pad="P$2"/>
+<connect gate="G$1" pin="V+@4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74ACT14" prefix="HEX">
+<gates>
+<gate name="G$1" symbol="SN74ACT14" x="-12.7" y="2.54"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP14">
+<connects>
+<connect gate="G$1" pin="1A@1" pad="1"/>
+<connect gate="G$1" pin="1Y@2" pad="2"/>
+<connect gate="G$1" pin="2A@3" pad="3"/>
+<connect gate="G$1" pin="2Y@4" pad="4"/>
+<connect gate="G$1" pin="3A@5" pad="5"/>
+<connect gate="G$1" pin="3Y@6" pad="6"/>
+<connect gate="G$1" pin="4A@9" pad="9"/>
+<connect gate="G$1" pin="4Y@8" pad="8"/>
+<connect gate="G$1" pin="5A@11" pad="11"/>
+<connect gate="G$1" pin="5Y@10" pad="10"/>
+<connect gate="G$1" pin="6A@13" pad="13"/>
+<connect gate="G$1" pin="6Y@12" pad="12"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="VCC@14" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CTX958">
+<gates>
 </gates>
 <devices>
 <device name="">

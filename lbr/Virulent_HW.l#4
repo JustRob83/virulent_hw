@@ -13779,8 +13779,8 @@ University</text>
 <pin name="1A@1" x="-15.24" y="15.24" length="short"/>
 <pin name="3A@5" x="-15.24" y="-5.08" length="short"/>
 <pin name="3Y@6" x="-15.24" y="-10.16" length="short"/>
-<pin name="GND@7" x="-15.24" y="-15.24" length="short"/>
-<pin name="VCC@14" x="15.24" y="15.24" length="short" rot="R180"/>
+<pin name="GND@7" x="-15.24" y="-15.24" length="short" direction="pwr"/>
+<pin name="VCC@14" x="15.24" y="15.24" length="short" direction="pwr" rot="R180"/>
 <pin name="6A@13" x="15.24" y="10.16" length="short" rot="R180"/>
 <pin name="6Y@12" x="15.24" y="5.08" length="short" rot="R180"/>
 <pin name="5A@11" x="15.24" y="0" length="short" rot="R180"/>
@@ -13790,6 +13790,28 @@ University</text>
 <wire x1="2.54" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94" curve="-233.130102"/>
 <text x="-12.7" y="-20.32" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="18.796" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="CTX958">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="1@1" x="-10.16" y="7.62" length="short"/>
+<pin name="GND0@2" x="-10.16" y="-7.62" length="short" direction="pwr"/>
+<pin name="3@3" x="10.16" y="-7.62" length="short" rot="R180"/>
+<pin name="GND1@4" x="10.16" y="7.62" length="short" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-0.508" y2="0.508" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0.508" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.508" x2="0.254" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.508" x2="1.27" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.508" x2="-0.254" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.508" x2="-1.27" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-0.508" x2="0.508" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.016" x2="1.016" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0.508" x2="-0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.016" x2="-1.016" y2="-0.508" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -19161,8 +19183,37 @@ DIODES INC
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74ACT14">
+<deviceset name="SN74ACT14" prefix="HEX">
 <gates>
+<gate name="G$1" symbol="SN74ACT14" x="-12.7" y="2.54"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP14">
+<connects>
+<connect gate="G$1" pin="1A@1" pad="1"/>
+<connect gate="G$1" pin="1Y@2" pad="2"/>
+<connect gate="G$1" pin="2A@3" pad="3"/>
+<connect gate="G$1" pin="2Y@4" pad="4"/>
+<connect gate="G$1" pin="3A@5" pad="5"/>
+<connect gate="G$1" pin="3Y@6" pad="6"/>
+<connect gate="G$1" pin="4A@9" pad="9"/>
+<connect gate="G$1" pin="4Y@8" pad="8"/>
+<connect gate="G$1" pin="5A@11" pad="11"/>
+<connect gate="G$1" pin="5Y@10" pad="10"/>
+<connect gate="G$1" pin="6A@13" pad="13"/>
+<connect gate="G$1" pin="6Y@12" pad="12"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="VCC@14" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CTX958">
+<gates>
+<gate name="G$1" symbol="CTX958" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
