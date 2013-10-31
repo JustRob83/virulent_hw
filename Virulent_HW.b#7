@@ -1191,6 +1191,22 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="C0402">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="motorFeedback">
@@ -1378,14 +1394,38 @@ design rules under a new name.</description>
 <element name="C2" library="rcl" package="C0805" value="" x="-8.89" y="-44.45"/>
 <element name="C3" library="rcl" package="C0805" value="" x="-8.89" y="-49.53"/>
 <element name="VR1" library="motorFeedback" package="PG-TO252-5-11" value="TLE4476D" x="-17.78" y="-43.18"/>
-<element name="C4" library="rcl" package="C1206" value="" x="-19.05" y="-54.61"/>
+<element name="C4" library="rcl" package="C1206" value="0.47u" x="-19.05" y="-54.61"/>
+<element name="C5" library="rcl" package="C0402" value="0.1u" x="-20.32" y="-58.42"/>
+<element name="C6" library="rcl" package="C0402" value="0.1u" x="-20.32" y="-62.23"/>
+<element name="C7" library="rcl" package="C1206" value="10u" x="-19.05" y="-67.31"/>
+<element name="C8" library="rcl" package="C1206" value="10u" x="-19.05" y="-72.39"/>
+<element name="C9" library="rcl" package="C0805" value="4.7u" x="-20.32" y="-78.74"/>
+<element name="C10" library="rcl" package="C0805" value="1u" x="-20.32" y="-83.82"/>
+<element name="C11" library="rcl" package="C0402" value="0.01u" x="-20.32" y="-87.63"/>
+<element name="C12" library="rcl" package="C0402" value="0.1u" x="-20.32" y="-91.44"/>
 </elements>
 <signals>
 <signal name="+3.3V">
 <contactref element="VR1" pad="2"/>
+<contactref element="C8" pad="1"/>
+<contactref element="C6" pad="1"/>
+<contactref element="C12" pad="1"/>
+<contactref element="C10" pad="1"/>
+<contactref element="C11" pad="1"/>
+<contactref element="C9" pad="1"/>
+<wire x1="-20.97" y1="-87.63" x2="-20.97" y2="-91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.27" y1="-83.82" x2="-20.97" y2="-87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.27" y1="-78.74" x2="-21.27" y2="-83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.45" y1="-72.39" x2="-21.27" y2="-78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.97" y1="-62.23" x2="-20.45" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.923" y1="-48.26" x2="-20.97" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="VR1" pad="4"/>
+<contactref element="C7" pad="1"/>
+<contactref element="C5" pad="1"/>
+<wire x1="-20.97" y1="-58.42" x2="-20.45" y2="-67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.637" y1="-48.26" x2="-20.97" y2="-58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9-36V">
 <contactref element="VR1" pad="1"/>
@@ -1395,6 +1435,22 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="VR1" pad="3"/>
 <contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C12" pad="2"/>
+<wire x1="-19.67" y1="-87.63" x2="-19.67" y2="-91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.37" y1="-83.82" x2="-19.67" y2="-87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.37" y1="-78.74" x2="-19.37" y2="-83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.65" y1="-72.39" x2="-19.37" y2="-78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.65" y1="-67.31" x2="-17.65" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.67" y1="-62.23" x2="-17.65" y2="-67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.67" y1="-58.42" x2="-19.67" y2="-62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.65" y1="-54.61" x2="-19.67" y2="-58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="-41.6814" x2="-17.65" y2="-54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ENABLE">
