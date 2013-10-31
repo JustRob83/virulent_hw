@@ -1177,6 +1177,23 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="motorFeedback">
+<packages>
+<package name="PG-TO252-5-11">
+<wire x1="-3.2512" y1="3.1242" x2="3.2512" y2="3.1242" width="0.127" layer="21"/>
+<wire x1="-3.2512" y1="3.0988" x2="-3.2512" y2="-3.1242" width="0.127" layer="21"/>
+<wire x1="-3.2512" y1="-3.1242" x2="3.2512" y2="-3.1242" width="0.127" layer="21"/>
+<wire x1="3.2512" y1="-3.1242" x2="3.2512" y2="3.1242" width="0.127" layer="21"/>
+<smd name="3" x="0" y="1.4986" dx="5.461" dy="6.096" layer="1" rot="R90"/>
+<smd name="4" x="1.143" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
+<smd name="5" x="2.286" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
+<smd name="2" x="-1.143" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
+<smd name="1" x="-2.286" y="-5.08" dx="2.54" dy="0.7112" layer="1" rot="R270"/>
+<text x="-3.5052" y="-3.1242" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="4.5212" y="-3.1242" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1344,8 +1361,24 @@ design rules under a new name.</description>
 <element name="C1" library="rcl" package="C0805" value="" x="-8.89" y="-39.37"/>
 <element name="C2" library="rcl" package="C0805" value="" x="-8.89" y="-44.45"/>
 <element name="C3" library="rcl" package="C0805" value="" x="-8.89" y="-49.53"/>
+<element name="VR1" library="motorFeedback" package="PG-TO252-5-11" value="TLE4476D" x="-17.78" y="-43.18"/>
 </elements>
 <signals>
+<signal name="+3.3V">
+<contactref element="VR1" pad="2"/>
+</signal>
+<signal name="+5V">
+<contactref element="VR1" pad="4"/>
+</signal>
+<signal name="+9-36V">
+<contactref element="VR1" pad="1"/>
+</signal>
+<signal name="5V_ENABLE">
+<contactref element="VR1" pad="5"/>
+</signal>
+<signal name="GND">
+<contactref element="VR1" pad="3"/>
+</signal>
 </signals>
 </board>
 </drawing>

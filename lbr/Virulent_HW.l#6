@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -11762,6 +11762,35 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <text x="-6.35" y="-8.255" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-6.35" y="6.35" size="1.27" layer="27">&gt;NAME</text>
 </package>
+<package name="MSL0201RGB">
+<wire x1="-0.65" y1="1.525" x2="-0.65" y2="-1.525" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="1.525" x2="0.65" y2="1.525" width="0.127" layer="21"/>
+<wire x1="0.65" y1="1.525" x2="0.65" y2="-1.525" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="-1.525" x2="0.65" y2="-1.525" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.075" y="-1.45" dx="0.9" dy="0.8" layer="1"/>
+<smd name="P$4" x="-0.075" y="1.45" dx="0.9" dy="0.8" layer="1"/>
+<smd name="P$3" x="0.325" y="0.4" dx="1.4" dy="0.5" layer="1"/>
+<smd name="P$2" x="0.325" y="-0.4" dx="1.4" dy="0.5" layer="1"/>
+<text x="0.985" y="2.96" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="-1.22" y="-3.14" size="1.27" layer="27" rot="R90">&gt;Value</text>
+<wire x1="-0.65" y1="-0.2" x2="0.65" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-0.2" x2="0.65" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-0.6" x2="-0.65" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-0.6" x2="-0.65" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="0.2" x2="0.65" y2="0.2" width="0.127" layer="51"/>
+<wire x1="0.65" y1="0.2" x2="0.65" y2="0.6" width="0.127" layer="51"/>
+<wire x1="0.65" y1="0.6" x2="-0.65" y2="0.6" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="0.6" x2="-0.65" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="1.1" x2="0.65" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="1.5" x2="0.65" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="1.1" x2="-0.65" y2="1.5" width="0.127" layer="51"/>
+<wire x1="0.64" y1="1.51" x2="0.65" y2="1.5" width="0.127" layer="51"/>
+<wire x1="0.65" y1="1.5" x2="0.65" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-1.1" x2="0.65" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-1.1" x2="0.65" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-1.5" x2="-0.65" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-1.5" x2="-0.65" y2="-1.1" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME">
@@ -13099,7 +13128,7 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <wire x1="259.08" y1="5.08" x2="294.64" y2="5.08" width="0.254" layer="94"/>
 <wire x1="309.88" y1="5.08" x2="360.68" y2="5.08" width="0.254" layer="94"/>
 <wire x1="360.68" y1="5.08" x2="411.48" y2="5.08" width="0.254" layer="94"/>
-<wire x1="411.48" y1="34.925" x2="411.48" y2="55.88" width="0.254" layer="94"/>
+<wire x1="411.48" y1="30.48" x2="411.48" y2="55.88" width="0.254" layer="94"/>
 <wire x1="411.48" y1="55.88" x2="411.48" y2="106.68" width="0.254" layer="94"/>
 <wire x1="411.48" y1="106.68" x2="411.48" y2="157.48" width="0.254" layer="94"/>
 <wire x1="411.48" y1="157.48" x2="411.48" y2="208.28" width="0.254" layer="94"/>
@@ -13161,25 +13190,19 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <wire x1="264.16" y1="254" x2="264.16" y2="259.08" width="0.254" layer="94"/>
 <wire x1="271.78" y1="254" x2="271.78" y2="259.08" width="0.254" layer="94"/>
 <wire x1="355.6" y1="254" x2="355.6" y2="259.08" width="0.254" layer="94"/>
-<wire x1="294.64" y1="34.925" x2="294.64" y2="17.78" width="0.254" layer="94"/>
-<wire x1="294.64" y1="17.78" x2="344.17" y2="17.78" width="0.254" layer="94"/>
-<wire x1="352.425" y1="17.78" x2="352.425" y2="34.925" width="0.254" layer="94"/>
-<wire x1="352.425" y1="34.925" x2="294.64" y2="34.925" width="0.254" layer="94"/>
-<wire x1="352.425" y1="34.925" x2="411.48" y2="34.925" width="0.254" layer="94"/>
-<wire x1="411.48" y1="34.925" x2="411.48" y2="17.78" width="0.254" layer="94"/>
-<wire x1="411.48" y1="17.78" x2="352.425" y2="17.78" width="0.254" layer="94"/>
-<wire x1="344.17" y1="17.78" x2="352.425" y2="17.78" width="0.254" layer="94"/>
+<wire x1="294.64" y1="17.78" x2="355.6" y2="17.78" width="0.254" layer="94"/>
+<wire x1="355.6" y1="17.78" x2="411.48" y2="17.78" width="0.254" layer="94"/>
+<wire x1="411.48" y1="30.48" x2="411.48" y2="17.78" width="0.254" layer="94"/>
 <wire x1="294.64" y1="17.78" x2="294.64" y2="14.605" width="0.254" layer="94"/>
-<wire x1="294.64" y1="14.605" x2="344.17" y2="14.605" width="0.254" layer="94"/>
-<wire x1="344.17" y1="14.605" x2="344.17" y2="17.78" width="0.254" layer="94"/>
+<wire x1="294.64" y1="14.605" x2="355.346" y2="14.605" width="0.254" layer="94"/>
 <wire x1="294.64" y1="14.605" x2="294.64" y2="11.43" width="0.254" layer="94"/>
 <wire x1="294.64" y1="11.43" x2="344.17" y2="11.43" width="0.254" layer="94"/>
-<wire x1="344.17" y1="11.43" x2="344.17" y2="14.605" width="0.254" layer="94"/>
 <wire x1="294.64" y1="11.43" x2="294.64" y2="8.255" width="0.254" layer="94"/>
 <wire x1="294.64" y1="8.255" x2="344.17" y2="8.255" width="0.254" layer="94"/>
 <wire x1="344.17" y1="8.255" x2="344.17" y2="11.43" width="0.254" layer="94"/>
 <wire x1="411.48" y1="11.43" x2="411.48" y2="17.78" width="0.254" layer="94"/>
-<wire x1="344.17" y1="11.43" x2="411.48" y2="11.43" width="0.254" layer="94"/>
+<wire x1="344.17" y1="11.43" x2="355.6" y2="11.43" width="0.254" layer="94"/>
+<wire x1="355.6" y1="11.43" x2="411.48" y2="11.43" width="0.254" layer="94"/>
 <wire x1="344.17" y1="8.255" x2="411.48" y2="8.255" width="0.254" layer="94"/>
 <wire x1="411.48" y1="8.255" x2="411.48" y2="11.43" width="0.254" layer="94"/>
 <wire x1="294.64" y1="8.255" x2="294.64" y2="5.08" width="0.254" layer="94"/>
@@ -13218,24 +13241,17 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <text x="315.595" y="13.97" size="1.905" layer="94" font="vector" rot="R180">DRAWN BY :</text>
 <text x="315.595" y="10.795" size="1.905" layer="94" font="vector" rot="R180">CHECKED BY :</text>
 <text x="315.595" y="17.145" size="1.905" layer="94" font="vector" rot="R180">ENGINEER :</text>
-<text x="345.44" y="12.7" size="3.81" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="358.14" y="12.7" size="3.81" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="367.03" y="10.795" size="1.905" layer="94" font="vector" rot="R180">PART NUMBER :</text>
-<text x="358.14" y="27.94" size="3.81" layer="94" font="vector">Autonomous</text>
-<text x="359.41" y="20.955" size="3.81" layer="94" font="vector">Flying Craft</text>
-<text x="297.815" y="31.75" size="2.1844" layer="94" font="vector">NOTICE :</text>
 <text x="297.18" y="5.715" size="1.905" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
 <text x="365.76" y="5.715" size="1.905" layer="94" font="vector">SHEET :</text>
 <text x="377.825" y="5.715" size="1.905" layer="94" font="vector">&gt;SHEET</text>
-<text x="314.325" y="31.75" size="1.6764" layer="94" font="vector">THIS DOCUMENT CONTAINS</text>
-<text x="295.91" y="29.21" size="1.6764" layer="94" font="vector">PROPRIETARY INFORMATION AND IT SHALL</text>
-<text x="295.91" y="26.67" size="1.6764" layer="94" font="vector">NOT BE USED OR REPRODUCED OR IT'S</text>
-<text x="295.91" y="24.13" size="1.6764" layer="94" font="vector">CONTENT DISCLOSED IN WHOLE OR IN PART</text>
-<text x="295.91" y="21.59" size="1.6764" layer="94" font="vector">WITHOUT THE PRIOR WRITTEN CONSENT OF</text>
-<text x="295.91" y="19.05" size="1.6764" layer="94" font="vector">DAN KIRKPATRICK</text>
 <text x="265.43" y="251.46" size="1.905" layer="94" font="vector">001</text>
-<text x="316.484" y="15.24" size="1.905" layer="94" font="vector">DAN KIRKPATRICK</text>
-<text x="316.484" y="12.192" size="1.905" layer="94" font="vector">DAN KIRKPATRICK</text>
-<text x="316.484" y="8.89" size="1.905" layer="94" font="vector">DAN KIRKPATRICK</text>
+<wire x1="355.6" y1="17.78" x2="355.6" y2="30.48" width="0.254" layer="94"/>
+<wire x1="355.6" y1="30.48" x2="411.48" y2="30.48" width="0.254" layer="94"/>
+<wire x1="355.6" y1="17.78" x2="355.6" y2="11.43" width="0.254" layer="94"/>
+<text x="358.14" y="19.812" size="3.81" layer="94" font="vector" ratio="7">Portland State
+University</text>
 </symbol>
 <symbol name="IRS2186">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -13692,26 +13708,35 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <pin name="NRST@4" x="15.24" y="5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="STM32F050G6IO">
-<wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
-<pin name="P$1" x="-12.7" y="17.78" length="short"/>
-<pin name="P$2" x="-12.7" y="12.7" length="short"/>
-<pin name="P$3" x="-12.7" y="7.62" length="short"/>
-<pin name="P$4" x="-12.7" y="2.54" length="short"/>
-<pin name="P$5" x="-12.7" y="-2.54" length="short"/>
-<pin name="P$6" x="-12.7" y="-7.62" length="short"/>
-<pin name="P$7" x="-12.7" y="-12.7" length="short"/>
-<pin name="P$8" x="-12.7" y="-17.78" length="short"/>
-<pin name="P$9" x="12.7" y="17.78" length="short" rot="R180"/>
-<pin name="P$10" x="12.7" y="12.7" length="short" rot="R180"/>
-<pin name="P$11" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="P$12" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="P$13" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="P$14" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="P$15" x="12.7" y="-12.7" length="short" rot="R180"/>
-<pin name="P$16" x="12.7" y="-17.78" length="short" rot="R180"/>
+<wire x1="-12.7" y1="30.48" x2="12.7" y2="30.48" width="0.254" layer="94"/>
+<wire x1="12.7" y1="30.48" x2="12.7" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
+<pin name="PA0@6" x="-15.24" y="25.4" length="short"/>
+<pin name="PA1@7" x="-15.24" y="20.32" length="short"/>
+<pin name="PA2@8" x="-15.24" y="15.24" length="short"/>
+<pin name="PA3@9" x="-15.24" y="10.16" length="short"/>
+<pin name="PA4@10" x="-15.24" y="5.08" length="short"/>
+<pin name="PA5@11" x="-15.24" y="0" length="short"/>
+<pin name="PA6@12" x="-15.24" y="-5.08" length="short"/>
+<pin name="PA7@13" x="-15.24" y="-10.16" length="short"/>
+<pin name="PA8@18" x="-15.24" y="-15.24" length="short"/>
+<pin name="PA9@19" x="-15.24" y="-20.32" length="short"/>
+<pin name="PA10@20" x="-15.24" y="-25.4" length="short"/>
+<pin name="PA13@21" x="15.24" y="27.94" length="short" rot="R180"/>
+<pin name="PA14@22" x="15.24" y="22.86" length="short" rot="R180"/>
+<pin name="PA15@23" x="15.24" y="17.78" length="short" rot="R180"/>
+<pin name="PB0@14" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="PB1@15" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="PB3@24" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="PB4@25" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="PB5@26" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="PB6@27" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="PB7@28" x="15.24" y="-17.78" length="short" rot="R180"/>
+<pin name="PF0/OSC_IN@2" x="15.24" y="-22.86" length="short" rot="R180"/>
+<pin name="PF1/OSC_OUT@3" x="15.24" y="-27.94" length="short" rot="R180"/>
+<text x="-12.7" y="-33.02" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="31.242" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="LM567CM">
 <wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
@@ -13728,6 +13753,18 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <pin name="TIMING_CAPACITOR@6" x="20.32" y="-2.54" length="short" rot="R180"/>
 <pin name="GND@7" x="20.32" y="2.54" length="short" rot="R180"/>
 <pin name="OUPUT@8" x="20.32" y="7.62" length="short" rot="R180"/>
+</symbol>
+<symbol name="MSL0201RGB">
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="G@1" x="-7.62" y="7.62" length="short"/>
+<pin name="R@2" x="-7.62" y="2.54" length="short"/>
+<pin name="B@3" x="-7.62" y="-2.54" length="short"/>
+<pin name="V+@4" x="-7.62" y="-7.62" length="short"/>
+<text x="-5.08" y="-12.7" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="10.922" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -19048,7 +19085,8 @@ DIODES INC
 </deviceset>
 <deviceset name="STM32F050G6" prefix="U">
 <gates>
-<gate name="G$1" symbol="STM32F050G6PWR/CTRL" x="0" y="0"/>
+<gate name="PWR/CTRL" symbol="STM32F050G6PWR/CTRL" x="-20.32" y="0"/>
+<gate name="IO" symbol="STM32F050G6IO" x="20.32" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -19058,11 +19096,40 @@ DIODES INC
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM567CM">
+<deviceset name="LM567CM" prefix="PLL">
 <gates>
+<gate name="G$1" symbol="LM567CM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="/NOPB-ND" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="INPUT@3" pad="3"/>
+<connect gate="G$1" pin="LOOP_FILTER@2" pad="2"/>
+<connect gate="G$1" pin="OUPUT@8" pad="8"/>
+<connect gate="G$1" pin="OUTPUT_FILTER@1" pad="1"/>
+<connect gate="G$1" pin="TIMING_CAPACITOR@6" pad="6"/>
+<connect gate="G$1" pin="TIMING_RESISTOR@5" pad="5"/>
+<connect gate="G$1" pin="V+@4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSL0201RGB">
+<gates>
+<gate name="G$1" symbol="MSL0201RGB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="W15" package="MSL0201RGB">
+<connects>
+<connect gate="G$1" pin="B@3" pad="P$3"/>
+<connect gate="G$1" pin="G@1" pad="P$1"/>
+<connect gate="G$1" pin="R@2" pad="P$2"/>
+<connect gate="G$1" pin="V+@4" pad="P$4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -19072,4 +19139,10 @@ DIODES INC
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
