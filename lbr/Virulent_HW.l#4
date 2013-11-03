@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -11921,6 +11921,39 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <wire x1="0.65" y1="-1.5" x2="-0.65" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-0.65" y1="-1.5" x2="-0.65" y2="-1.1" width="0.127" layer="51"/>
 </package>
+<package name="6-TSSOP">
+<wire x1="-0.625" y1="1" x2="0.625" y2="1" width="0.127" layer="21"/>
+<wire x1="0.625" y1="1" x2="0.625" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.625" y1="-1" x2="-0.625" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-1" x2="-0.625" y2="1" width="0.127" layer="21"/>
+<text x="-2.625" y="-2.625" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.75" y="1.375" size="1.27" layer="25">&gt;VALUE</text>
+<smd name="1" x="-0.95" y="0.65" dx="1" dy="0.4" layer="1"/>
+<smd name="2" x="-0.95" y="0" dx="1" dy="0.4" layer="1"/>
+<smd name="3" x="-0.95" y="-0.65" dx="1" dy="0.4" layer="1"/>
+<smd name="5" x="0.95" y="0.65" dx="1" dy="0.4" layer="1"/>
+<smd name="4" x="0.95" y="-0.65" dx="1" dy="0.4" layer="1"/>
+</package>
+<package name="TZY2">
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<smd name="2" x="1.6" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="1" x="-1.6" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-3.175" y="-3.175" size="1.27" layer="1">&gt;NAME</text>
+<text x="-3.81" y="1.905" size="1.27" layer="1">&gt;VALUE</text>
+</package>
+<package name="17M2-G">
+<pad name="1" x="0" y="1" drill="0.7"/>
+<pad name="2" x="0" y="-1" drill="0.7"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<text x="-3" y="-4" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3" y="3" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME">
@@ -13866,8 +13899,8 @@ University</text>
 <pin name="PB7@28" x="15.24" y="-17.78" length="short" rot="R180"/>
 <pin name="PF0/OSC_IN@2" x="15.24" y="-22.86" length="short" rot="R180"/>
 <pin name="PF1/OSC_OUT@3" x="15.24" y="-27.94" length="short" rot="R180"/>
-<text x="-12.7" y="-33.02" size="1.778" layer="94">&gt;NAME</text>
-<text x="-12.7" y="31.242" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-12.7" y="-33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="31.242" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LM567CM">
 <wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
@@ -13890,10 +13923,10 @@ University</text>
 <wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<pin name="G@1" x="-7.62" y="7.62" length="short"/>
-<pin name="R@2" x="-7.62" y="2.54" length="short"/>
-<pin name="B@3" x="-7.62" y="-2.54" length="short"/>
-<pin name="V+@4" x="-7.62" y="-7.62" length="short"/>
+<pin name="G@1" x="-7.62" y="7.62" length="short" direction="pwr"/>
+<pin name="R@2" x="-7.62" y="2.54" length="short" direction="pwr"/>
+<pin name="B@3" x="-7.62" y="-2.54" length="short" direction="pwr"/>
+<pin name="V+@4" x="-7.62" y="-7.62" length="short" direction="pwr"/>
 <text x="-5.08" y="-12.7" size="1.778" layer="94">&gt;NAME</text>
 <text x="-5.08" y="10.922" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
@@ -13945,6 +13978,55 @@ University</text>
 <wire x1="-0.508" y1="-1.016" x2="-1.016" y2="-0.508" width="0.254" layer="94"/>
 <text x="-7.62" y="-12.7" size="1.27" layer="94">&gt;NAME</text>
 <text x="-7.62" y="11.176" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="FSA66">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="A@1" x="-10.16" y="5.08" length="short"/>
+<pin name="B@2" x="-10.16" y="0" length="short"/>
+<pin name="GND@3" x="-10.16" y="-5.08" length="short" direction="pwr"/>
+<pin name="VCC@5" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="OE@4" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-7.62" y="-10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.366" y="8.128" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="TZYK2K450A001R00">
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="2.54" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-10.16" width="2.54" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="0" width="2.54" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="10.16" width="2.54" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="A@1" x="-12.7" y="0" length="short" direction="pwr"/>
+<pin name="B@2" x="12.7" y="0" length="short" direction="pwr" rot="R180"/>
+<text x="-5.08" y="-15.24" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="12.7" size="1.778" layer="94">&gt;Value</text>
+</symbol>
+<symbol name="TZY2">
+</symbol>
+<symbol name="WR-383250">
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<pin name="1@1" x="-10.16" y="0" length="short"/>
+<pin name="2@2" x="10.16" y="0" length="short" rot="R180"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="5.588" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -19265,39 +19347,40 @@ DIODES INC
 </deviceset>
 <deviceset name="STM32F050G6" prefix="U">
 <gates>
-<gate name="PWR/CTRL" symbol="STM32F050G6PWR/CTRL" x="-20.32" y="0"/>
-<gate name="IO" symbol="STM32F050G6IO" x="20.32" y="0"/>
+<gate name="-PWR/CTRL" symbol="STM32F050G6PWR/CTRL" x="-20.32" y="0"/>
+<gate name="-IO" symbol="STM32F050G6IO" x="20.32" y="0"/>
 </gates>
 <devices>
-<device name="" package="UQFPN-28">
+<device name="U6" package="UQFPN-28">
 <connects>
-<connect gate="IO" pin="PA0@6" pad="6"/>
-<connect gate="IO" pin="PA10@20" pad="20"/>
-<connect gate="IO" pin="PA13@21" pad="21"/>
-<connect gate="IO" pin="PA14@22" pad="22"/>
-<connect gate="IO" pin="PA15@23" pad="23"/>
-<connect gate="IO" pin="PA1@7" pad="7"/>
-<connect gate="IO" pin="PA2@8" pad="8"/>
-<connect gate="IO" pin="PA3@9" pad="9"/>
-<connect gate="IO" pin="PA4@10" pad="10"/>
-<connect gate="IO" pin="PA5@11" pad="11"/>
-<connect gate="IO" pin="PA6@12" pad="12"/>
-<connect gate="IO" pin="PA7@13" pad="13"/>
-<connect gate="IO" pin="PA8@18" pad="18"/>
-<connect gate="IO" pin="PA9@19" pad="19"/>
-<connect gate="IO" pin="PB0@14" pad="14"/>
-<connect gate="IO" pin="PB1@15" pad="15"/>
-<connect gate="IO" pin="PB3@24" pad="24"/>
-<connect gate="IO" pin="PB4@25" pad="25"/>
-<connect gate="IO" pin="PB5@26" pad="26"/>
-<connect gate="IO" pin="PB6@27" pad="27"/>
-<connect gate="IO" pin="PB7@28" pad="28"/>
-<connect gate="IO" pin="PF0/OSC_IN@2" pad="2"/>
-<connect gate="IO" pin="PF1/OSC_OUT@3" pad="3"/>
-<connect gate="PWR/CTRL" pin="BOOT0@1" pad="1"/>
-<connect gate="PWR/CTRL" pin="NRST@4" pad="4"/>
-<connect gate="PWR/CTRL" pin="VDD@17" pad="17"/>
-<connect gate="PWR/CTRL" pin="VSS@16" pad="16"/>
+<connect gate="-IO" pin="PA0@6" pad="6"/>
+<connect gate="-IO" pin="PA10@20" pad="20"/>
+<connect gate="-IO" pin="PA13@21" pad="21"/>
+<connect gate="-IO" pin="PA14@22" pad="22"/>
+<connect gate="-IO" pin="PA15@23" pad="23"/>
+<connect gate="-IO" pin="PA1@7" pad="7"/>
+<connect gate="-IO" pin="PA2@8" pad="8"/>
+<connect gate="-IO" pin="PA3@9" pad="9"/>
+<connect gate="-IO" pin="PA4@10" pad="10"/>
+<connect gate="-IO" pin="PA5@11" pad="11"/>
+<connect gate="-IO" pin="PA6@12" pad="12"/>
+<connect gate="-IO" pin="PA7@13" pad="13"/>
+<connect gate="-IO" pin="PA8@18" pad="18"/>
+<connect gate="-IO" pin="PA9@19" pad="19"/>
+<connect gate="-IO" pin="PB0@14" pad="14"/>
+<connect gate="-IO" pin="PB1@15" pad="15"/>
+<connect gate="-IO" pin="PB3@24" pad="24"/>
+<connect gate="-IO" pin="PB4@25" pad="25"/>
+<connect gate="-IO" pin="PB5@26" pad="26"/>
+<connect gate="-IO" pin="PB6@27" pad="27"/>
+<connect gate="-IO" pin="PB7@28" pad="28"/>
+<connect gate="-IO" pin="PF0/OSC_IN@2" pad="2"/>
+<connect gate="-IO" pin="PF1/OSC_OUT@3" pad="3"/>
+<connect gate="-PWR/CTRL" pin="BOOT0@1" pad="1"/>
+<connect gate="-PWR/CTRL" pin="NRST@4" pad="4"/>
+<connect gate="-PWR/CTRL" pin="VDD@17" pad="17"/>
+<connect gate="-PWR/CTRL" pin="VDDA@5" pad="5"/>
+<connect gate="-PWR/CTRL" pin="VSS@16" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19327,7 +19410,7 @@ DIODES INC
 </device>
 </devices>
 </deviceset>
-<deviceset name="MSL0201RGB" prefix="RGB">
+<deviceset name="MSL0201RGB" prefix="LED">
 <gates>
 <gate name="G$1" symbol="MSL0201RGB" x="0" y="0"/>
 </gates>
@@ -19384,6 +19467,57 @@ DIODES INC
 <connect gate="G$1" pin="3@3" pad="3"/>
 <connect gate="G$1" pin="GND0@2" pad="2"/>
 <connect gate="G$1" pin="GND1@4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FSA66" prefix="SPST">
+<gates>
+<gate name="G$1" symbol="FSA66" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC70-5" package="6-TSSOP">
+<connects>
+<connect gate="G$1" pin="A@1" pad="1"/>
+<connect gate="G$1" pin="B@2" pad="2"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="OE@4" pad="4"/>
+<connect gate="G$1" pin="VCC@5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TZY2K450A001R00" prefix="CT">
+<gates>
+<gate name="G$1" symbol="TZYK2K450A001R00" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="TZY2">
+<connects>
+<connect gate="G$1" pin="A@1" pad="1"/>
+<connect gate="G$1" pin="B@2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WR-383250" prefix="NFC">
+<gates>
+<gate name="G$1" symbol="WR-383250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-17M2-G" package="17M2-G">
+<connects>
+<connect gate="G$1" pin="1@1" pad="1"/>
+<connect gate="G$1" pin="2@2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
