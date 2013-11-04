@@ -6807,6 +6807,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <junction x="20.32" y="20.32"/>
 <junction x="35.56" y="20.32"/>
 <junction x="83.82" y="20.32"/>
+<junction x="55.88" y="20.32"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -6829,6 +6830,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <junction x="111.76" y="20.32"/>
 <junction x="127" y="20.32"/>
 <junction x="175.26" y="20.32"/>
+<junction x="147.32" y="20.32"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>

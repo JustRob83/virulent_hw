@@ -13993,10 +13993,10 @@ University</text>
 <text x="-7.366" y="8.128" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="TZYK2K450A001R00">
-<pin name="A@1" x="-3.81" y="0" length="short" direction="pwr"/>
-<pin name="B@2" x="3.81" y="0" length="short" direction="pwr" rot="R180"/>
-<text x="-5.08" y="-15.24" size="1.778" layer="94">&gt;NAME</text>
-<text x="-5.08" y="12.7" size="1.778" layer="94">&gt;Value</text>
+<pin name="A@1" x="-3.81" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="B@2" x="3.81" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;NAME</text>
+<text x="-2.54" y="3.302" size="1.778" layer="94">&gt;Value</text>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.778" y1="-2.032" x2="1.778" y2="1.524" width="0.254" layer="94"/>

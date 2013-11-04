@@ -370,16 +370,6 @@ chip</description>
 <smd name="5" x="0.95" y="0.65" dx="1" dy="0.4" layer="1"/>
 <smd name="4" x="0.95" y="-0.65" dx="1" dy="0.4" layer="1"/>
 </package>
-<package name="17M2-G">
-<pad name="1" x="0" y="1" drill="0.7"/>
-<pad name="2" x="0" y="-1" drill="0.7"/>
-<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
-<text x="-3" y="-4" size="1.27" layer="21">&gt;NAME</text>
-<text x="-3" y="3" size="1.27" layer="21">&gt;VALUE</text>
-</package>
 <package name="TZY2">
 <wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
@@ -1719,7 +1709,6 @@ design rules under a new name.</description>
 <element name="R16" library="Virulent_HW" package="R0402" value="NU" x="-40.64" y="-273.05"/>
 <element name="R17" library="Virulent_HW" package="R0402" value="NU" x="-40.64" y="-278.13"/>
 <element name="SPST1" library="Virulent_HW" package="6-TSSOP" value="FSA66SC70-5" x="-38.1" y="-284.48"/>
-<element name="NFC1" library="Virulent_HW" package="17M2-G" value="WR-383250-17M2-G" x="-46.99" y="-281.94"/>
 <element name="CT1" library="Virulent_HW" package="TZY2" value="TZY2K450A001R002" x="-45.72" y="-292.1"/>
 </elements>
 <signals>
@@ -1899,11 +1888,9 @@ design rules under a new name.</description>
 <contactref element="PLL1" pad="3"/>
 <contactref element="PLL2" pad="3"/>
 <contactref element="PLL3" pad="3"/>
-<contactref element="NFC1" pad="1"/>
 <contactref element="SPST1" pad="2"/>
 <wire x1="-17.145" y1="-140.7795" x2="-17.145" y2="-168.7195" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.99" y1="-280.94" x2="-17.145" y2="-168.7195" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.05" y1="-284.48" x2="-46.99" y2="-280.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.05" y1="-284.48" x2="-17.145" y2="-168.7195" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.985" y1="-18.8595" x2="-17.145" y2="-140.7795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
@@ -2069,9 +2056,7 @@ design rules under a new name.</description>
 <contactref element="SPST1" pad="4"/>
 </signal>
 <signal name="N$26">
-<contactref element="NFC1" pad="2"/>
 <contactref element="CT1" pad="1"/>
-<wire x1="-46.99" y1="-282.94" x2="-47.32" y2="-292.1" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

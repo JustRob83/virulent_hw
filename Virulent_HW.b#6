@@ -2061,7 +2061,7 @@ design rules under a new name.</description>
 <wire x1="-41.29" y1="-273.05" x2="-31.145" y2="-214.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.99" y1="-278.13" x2="-41.29" y2="-273.05" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="TX_SIG">
+<signal name="TX/RX_SIG">
 <contactref element="SPST1" pad="2"/>
 <contactref element="NFC1" pad="1"/>
 <wire x1="-39.05" y1="-284.48" x2="-46.99" y2="-280.94" width="0" layer="19" extent="1-1"/>
