@@ -380,6 +380,16 @@ chip</description>
 <text x="-3.175" y="-3.175" size="1.27" layer="1">&gt;NAME</text>
 <text x="-3.81" y="1.905" size="1.27" layer="1">&gt;VALUE</text>
 </package>
+<package name="17M2-G">
+<pad name="1" x="0" y="1" drill="0.7"/>
+<pad name="2" x="0" y="-1" drill="0.7"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<text x="-3" y="-4" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3" y="3" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -1710,6 +1720,7 @@ design rules under a new name.</description>
 <element name="R17" library="Virulent_HW" package="R0402" value="NU" x="-40.64" y="-278.13"/>
 <element name="SPST1" library="Virulent_HW" package="6-TSSOP" value="FSA66SC70-5" x="-38.1" y="-284.48"/>
 <element name="CT1" library="Virulent_HW" package="TZY2" value="TZY2K450A001R002" x="-45.72" y="-292.1"/>
+<element name="NFC1" library="Virulent_HW" package="17M2-G" value="WR-383250-17M2-G" x="-54.61" y="-290.83"/>
 </elements>
 <signals>
 <signal name="+3.3V">
@@ -1889,8 +1900,10 @@ design rules under a new name.</description>
 <contactref element="PLL2" pad="3"/>
 <contactref element="PLL3" pad="3"/>
 <contactref element="SPST1" pad="2"/>
+<contactref element="NFC1" pad="1"/>
 <wire x1="-17.145" y1="-140.7795" x2="-17.145" y2="-168.7195" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.05" y1="-284.48" x2="-17.145" y2="-168.7195" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="-289.83" x2="-39.05" y2="-284.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.985" y1="-18.8595" x2="-17.145" y2="-140.7795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
@@ -2057,6 +2070,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$26">
 <contactref element="CT1" pad="1"/>
+<contactref element="NFC1" pad="2"/>
+<wire x1="-47.32" y1="-292.1" x2="-54.61" y2="-291.83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

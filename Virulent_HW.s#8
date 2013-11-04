@@ -6851,6 +6851,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <junction x="203.2" y="20.32"/>
 <junction x="218.44" y="20.32"/>
 <junction x="266.7" y="20.32"/>
+<junction x="238.76" y="20.32"/>
 </segment>
 <segment>
 <pinref part="CTX1" gate="G$1" pin="GND1@4"/>
@@ -7117,6 +7118,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="350.52" y1="50.8" x2="358.14" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="50.8" x2="358.14" y2="50.8" width="0.1524" layer="91"/>
 <junction x="370.84" y="68.58"/>
+<junction x="358.14" y="50.8"/>
 </segment>
 </net>
 <net name="N$19" class="0">

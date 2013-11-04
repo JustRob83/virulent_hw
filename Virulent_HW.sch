@@ -6431,6 +6431,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="CT1" library="Virulent_HW" deviceset="TZY2K450A001R00" device="2"/>
 <part name="GND19" library="Virulent_HW" deviceset="GND" device=""/>
 <part name="NFC1" library="Virulent_HW" deviceset="WR-383250" device="-17M2-G"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C1206" value="NU"/>
 </parts>
 <sheets>
 <sheet>
@@ -6477,9 +6478,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="96.52" y1="78.74" x2="96.52" y2="114.3" width="0.1524" layer="97"/>
 <text x="127" y="109.22" size="1.778" layer="97">Frequency Modulation</text>
 <wire x1="10.16" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="114.3" x2="91.44" y2="83.82" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="83.82" x2="10.16" y2="114.3" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="114.3" x2="91.44" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="78.74" x2="10.16" y2="114.3" width="0.1524" layer="97"/>
 <text x="40.64" y="109.22" size="1.778" layer="97">NFC Transmitter</text>
 </plain>
 <instances>
@@ -6573,8 +6574,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <instance part="P+18" gate="G$1" x="157.48" y="101.6"/>
 <instance part="GND18" gate="1" x="127" y="83.82"/>
 <instance part="CT1" gate="G$1" x="66.04" y="96.52"/>
-<instance part="GND19" gate="1" x="71.12" y="91.44"/>
+<instance part="GND19" gate="1" x="83.82" y="93.98"/>
 <instance part="NFC1" gate="G$1" x="43.18" y="96.52"/>
+<instance part="C25" gate="G$1" x="63.5" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6910,10 +6912,13 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <segment>
 <wire x1="68.58" y1="96.52" x2="69.85" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="96.52" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="CT1" gate="G$1" pin="B@2"/>
 <junction x="69.85" y="96.52"/>
+<wire x1="71.12" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="96.52" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="5V_ENABLE" class="0">
@@ -7301,7 +7306,12 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <segment>
 <pinref part="NFC1" gate="G$1" pin="2@2"/>
 <pinref part="CT1" gate="G$1" pin="A@1"/>
-<wire x1="53.34" y1="96.52" x2="62.23" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="96.52" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="96.52" x2="62.23" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="96.52" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="83.82" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<junction x="55.88" y="96.52"/>
 </segment>
 </net>
 </nets>
