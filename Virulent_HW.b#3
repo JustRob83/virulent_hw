@@ -333,10 +333,10 @@ chip</description>
 <wire x1="-0.65" y1="1.525" x2="0.65" y2="1.525" width="0.127" layer="21"/>
 <wire x1="0.65" y1="1.525" x2="0.65" y2="-1.525" width="0.127" layer="21"/>
 <wire x1="-0.65" y1="-1.525" x2="0.65" y2="-1.525" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.075" y="-1.45" dx="0.9" dy="0.8" layer="1"/>
-<smd name="P$4" x="-0.075" y="1.45" dx="0.9" dy="0.8" layer="1"/>
-<smd name="P$3" x="0.325" y="0.4" dx="1.4" dy="0.5" layer="1"/>
-<smd name="P$2" x="0.325" y="-0.4" dx="1.4" dy="0.5" layer="1"/>
+<smd name="1" x="-0.075" y="-1.45" dx="0.9" dy="0.8" layer="1"/>
+<smd name="4" x="-0.075" y="1.45" dx="0.9" dy="0.8" layer="1"/>
+<smd name="3" x="0.325" y="0.4" dx="1.4" dy="0.5" layer="1"/>
+<smd name="2" x="0.325" y="-0.4" dx="1.4" dy="0.5" layer="1"/>
 <text x="0.985" y="2.96" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="-1.22" y="-3.14" size="1.27" layer="27" rot="R90">&gt;Value</text>
 <wire x1="-0.65" y1="-0.2" x2="0.65" y2="-0.2" width="0.127" layer="51"/>
@@ -1710,7 +1710,7 @@ design rules under a new name.</description>
 <element name="R8" library="Virulent_HW" package="R0402" value="10k" x="-33.02" y="-232.41"/>
 <element name="R9" library="Virulent_HW" package="R0402" value="10k" x="-33.02" y="-237.49"/>
 <element name="R10" library="Virulent_HW" package="R0402" value="10k" x="-33.02" y="-242.57"/>
-<element name="RGB1" library="Virulent_HW" package="MSL0201RGB" value="MSL0201RGBW15" x="-39.37" y="-241.3"/>
+<element name="RGB1" library="Virulent_HW" package="MSL0201RGB" value="MSL0201RGBLED" x="-39.37" y="-241.3"/>
 <element name="R11" library="Virulent_HW" package="R0402" value="10k" x="-40.64" y="-247.65"/>
 <element name="R12" library="Virulent_HW" package="R0402" value="10k" x="-40.64" y="-252.73"/>
 <element name="R13" library="Virulent_HW" package="R0402" value="10k" x="-40.64" y="-257.81"/>
@@ -1721,6 +1721,7 @@ design rules under a new name.</description>
 <element name="SPST1" library="Virulent_HW" package="6-TSSOP" value="FSA66SC70-5" x="-38.1" y="-284.48"/>
 <element name="CT1" library="Virulent_HW" package="TZY2" value="TZY2K450A001R002" x="-45.72" y="-292.1"/>
 <element name="NFC1" library="Virulent_HW" package="17M2-G" value="WR-383250-17M2-G" x="-54.61" y="-290.83"/>
+<element name="C25" library="rcl" package="C1206" value="NU" x="-54.61" y="-299.72"/>
 </elements>
 <signals>
 <signal name="+3.3V">
@@ -1737,10 +1738,9 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="R8" pad="2"/>
 <contactref element="R10" pad="2"/>
-<contactref element="RGB1" pad="P$4"/>
+<contactref element="RGB1" pad="4"/>
 <contactref element="R14" pad="2"/>
 <contactref element="R16" pad="2"/>
-<contactref element="SPST1" pad="5"/>
 <wire x1="-32.37" y1="-227.33" x2="-32.37" y2="-222.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.37" y1="-232.41" x2="-32.37" y2="-227.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.145" y1="-215.13" x2="-32.37" y2="-222.25" width="0" layer="19" extent="1-1"/>
@@ -1749,7 +1749,6 @@ design rules under a new name.</description>
 <wire x1="-39.445" y1="-239.85" x2="-32.37" y2="-242.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.99" y1="-262.89" x2="-32.37" y2="-242.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.99" y1="-273.05" x2="-39.99" y2="-262.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.15" y1="-283.83" x2="-39.99" y2="-273.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.97" y1="-91.44" x2="-31.145" y2="-215.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.97" y1="-87.63" x2="-20.97" y2="-91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.27" y1="-83.82" x2="-20.97" y2="-87.63" width="0" layer="19" extent="1-1"/>
@@ -1770,6 +1769,7 @@ design rules under a new name.</description>
 <contactref element="C20" pad="1"/>
 <contactref element="HEX1" pad="14"/>
 <contactref element="C24" pad="1"/>
+<contactref element="SPST1" pad="5"/>
 <wire x1="-20.055" y1="-182.495" x2="-29.34" y2="-215.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.875" y1="-168.7195" x2="-20.055" y2="-182.495" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.56" y1="-157.48" x2="-15.875" y2="-168.7195" width="0" layer="19" extent="1-1"/>
@@ -1780,6 +1780,7 @@ design rules under a new name.</description>
 <wire x1="-20.97" y1="-58.42" x2="-20.45" y2="-67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.637" y1="-48.26" x2="-20.97" y2="-58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.715" y1="-18.8595" x2="-16.637" y2="-48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.15" y1="-283.83" x2="-29.34" y2="-215.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9-36V">
 <contactref element="VR1" pad="1"/>
@@ -1824,6 +1825,7 @@ design rules under a new name.</description>
 <contactref element="R17" pad="1"/>
 <contactref element="SPST1" pad="3"/>
 <contactref element="CT1" pad="2"/>
+<contactref element="C25" pad="2"/>
 <wire x1="-26.54" y1="-215.9" x2="-31.145" y2="-215.63" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.54" y1="-209.55" x2="-26.54" y2="-215.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.34" y1="-203.2" x2="-26.54" y2="-209.55" width="0" layer="19" extent="1-1"/>
@@ -1860,6 +1862,7 @@ design rules under a new name.</description>
 <wire x1="-41.29" y1="-278.13" x2="-41.29" y2="-267.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.05" y1="-285.13" x2="-41.29" y2="-278.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.12" y1="-292.1" x2="-39.05" y2="-285.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.21" y1="-299.72" x2="-44.12" y2="-292.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ENABLE">
 <contactref element="VR1" pad="5"/>
@@ -2022,17 +2025,17 @@ design rules under a new name.</description>
 <wire x1="-32.37" y1="-237.49" x2="-34.995" y2="-213.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
-<contactref element="RGB1" pad="P$1"/>
+<contactref element="RGB1" pad="1"/>
 <contactref element="R11" pad="1"/>
 <wire x1="-39.445" y1="-242.75" x2="-41.29" y2="-247.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
-<contactref element="RGB1" pad="P$2"/>
+<contactref element="RGB1" pad="2"/>
 <contactref element="R12" pad="1"/>
 <wire x1="-39.045" y1="-241.7" x2="-41.29" y2="-252.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
-<contactref element="RGB1" pad="P$3"/>
+<contactref element="RGB1" pad="3"/>
 <contactref element="R13" pad="1"/>
 <wire x1="-39.045" y1="-240.9" x2="-41.29" y2="-257.81" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2067,10 +2070,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="MOD_FREQ">
 <contactref element="SPST1" pad="4"/>
+<contactref element="U1" pad="9"/>
+<wire x1="-37.15" y1="-285.13" x2="-34.02" y2="-216.505" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$27">
-<contactref element="CT1" pad="1"/>
+<signal name="N$26">
 <contactref element="NFC1" pad="2"/>
+<contactref element="CT1" pad="1"/>
+<contactref element="C25" pad="1"/>
+<wire x1="-54.61" y1="-291.83" x2="-56.01" y2="-299.72" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.32" y1="-292.1" x2="-54.61" y2="-291.83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
