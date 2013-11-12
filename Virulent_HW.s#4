@@ -7456,10 +7456,10 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="GND10" library="Virulent_HW" deviceset="GND" device=""/>
 <part name="R4" library="Virulent_HW" deviceset="R-US_" device="R0402" value="100k"/>
 <part name="R5" library="Virulent_HW" deviceset="R-US_" device="R0402" value="150k"/>
-<part name="C22" library="rcl" deviceset="C-EU" device="C1206" value="15p"/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C1206" value="15p"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0402" value="15p"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0402" value="15p"/>
 <part name="GND11" library="Virulent_HW" deviceset="GND" device=""/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="GND12" library="Virulent_HW" deviceset="GND" device=""/>
 <part name="GND13" library="Virulent_HW" deviceset="GND" device=""/>
 <part name="U1" library="Virulent_HW" deviceset="STM32F050G6" device="U6"/>
@@ -8723,6 +8723,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="119.38" y1="147.32" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="147.32" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
+<junction x="104.14" y="147.32"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -8735,24 +8736,6 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,350.52,76.2,HEX1,VCC,+5V,,,"/>
-<approved hash="104,1,373.38,53.34,CTX1,GND0,GND,,,"/>
-<approved hash="104,1,393.7,68.58,CTX1,GND1,GND,,,"/>
-<approved hash="104,1,226.06,198.12,U1-PWR/CTRL,VDD,+3.3V,,,"/>
-<approved hash="104,1,226.06,187.96,U1-PWR/CTRL,VSS,GND,,,"/>
-<approved hash="104,1,226.06,193.04,U1-PWR/CTRL,VDDA,+3.3V,,,"/>
-<approved hash="104,1,383.54,210.82,RGB1,G,N$11,,,"/>
-<approved hash="104,1,383.54,205.74,RGB1,R,N$15,,,"/>
-<approved hash="104,1,383.54,200.66,RGB1,B,N$16,,,"/>
-<approved hash="104,1,383.54,195.58,RGB1,V+,+3.3V,,,"/>
-<approved hash="104,1,63.5,165.1,SPST1,VCC,+5V,,,"/>
-<approved hash="104,1,26.67,119.38,CT1,A,N$26,,,"/>
-<approved hash="104,1,19.05,119.38,CT1,B,GND,,,"/>
-<approved hash="104,1,55.88,114.3,NFC1,1,N$29,,,"/>
-<approved hash="104,1,35.56,114.3,NFC1,2,N$26,,,"/>
-<approved hash="113,1,233.443,139.569,JP1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>

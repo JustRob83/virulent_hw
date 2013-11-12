@@ -8275,6 +8275,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="109.22" y1="127" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<junction x="109.22" y="127"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -8722,6 +8723,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="116.84" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
+<junction x="101.6" y="162.56"/>
 </segment>
 </net>
 <net name="N$11" class="0">
