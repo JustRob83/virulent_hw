@@ -11961,8 +11961,8 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <wire x1="-2.8" y1="-1.75" x2="-2.8" y2="1.75" width="0.127" layer="21"/>
 <smd name="2" x="4.2" y="0" dx="1.6" dy="1.1" layer="1" rot="R90"/>
 <smd name="1" x="-4.2" y="0" dx="1.6" dy="1.1" layer="1" rot="R90"/>
-<text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.4" y="-3.2" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3" y="-3.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.4" y="1.88" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="COM08720">
 <smd name="1" x="-3.1" y="1.85" dx="1.8" dy="1.1" layer="1"/>
