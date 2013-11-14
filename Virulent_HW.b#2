@@ -3065,13 +3065,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C27" pad="2"/>
 <contactref element="R25" pad="1"/>
 <contactref element="PLL3" pad="5"/>
-<wire x1="22.3245" y1="20.91" x2="22.0295" y2="21.205" width="0.254" layer="1"/>
-<wire x1="22.3245" y1="20.91" x2="22.48010625" y2="21.06560625" width="0.254" layer="1"/>
-<wire x1="22.48010625" y1="21.06560625" x2="22.659709375" y2="21.14" width="0.254" layer="1" curve="-44.999295"/>
-<wire x1="22.659709375" y1="21.14" x2="24.36" y2="21.14" width="0.254" layer="1"/>
 <wire x1="24.36" y1="21.14" x2="25.354790625" y2="21.14" width="0.254" layer="1"/>
 <wire x1="25.354790625" y1="21.14" x2="25.53439375" y2="21.06560625" width="0.254" layer="1" curve="-44.999502"/>
 <wire x1="25.53439375" y1="21.06560625" x2="25.79" y2="21.01" width="0.254" layer="1"/>
+<wire x1="24.36" y1="21.14" x2="22.186425" y2="21.14" width="0.254" layer="1"/>
+<wire x1="22.186425" y1="21.14" x2="22.0295" y2="21.205" width="0.254" layer="1" curve="-45"/>
 </signal>
 <signal name="N$27">
 <contactref element="R25" pad="2"/>

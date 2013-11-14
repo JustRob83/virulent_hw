@@ -2131,7 +2131,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="TP_CHOP_OUT" library="testpad" package="TP06SQ" value="TPTP06SQ" x="19.1" y="2.7" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="19.1" y="0.795" size="1" layer="37"/>
-<attribute name="NAME" x="18.7" y="1.4001" size="0.8128" layer="25"/>
+<attribute name="NAME" x="19.4" y="2.0001" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="18.846" y="2.319" size="0.0254" layer="27"/>
 </element>
 <element name="TP_CHOP_IN" library="testpad" package="TP06SQ" value="TPTP06SQ" x="30.4" y="3.3" smashed="yes">
@@ -2155,10 +2155,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="42.3" y="31.895" size="1" layer="37"/>
 <attribute name="NAME" x="39.7" y="34.4001" size="0.8128" layer="25"/>
 </element>
-<element name="TPGND" library="testpad" package="TP06SQ" value="TPTP06SQ" x="28.3" y="1.4" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="28.3" y="-0.505" size="1" layer="37"/>
-<attribute name="NAME" x="28" y="0.0001" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="28.046" y="1.019" size="0.0254" layer="27"/>
+<element name="TPGND" library="testpad" package="TP06SQ" value="TPTP06SQ" x="27.8" y="2.1" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="27.8" y="0.195" size="1" layer="37"/>
+<attribute name="NAME" x="27.5" y="0.7001" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="27.546" y="1.719" size="0.0254" layer="27"/>
 </element>
 <element name="TP_5V_ENABLE" library="testpad" package="TP06SQ" value="TPTP06SQ" x="40.5" y="29" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="40.5" y="27.095" size="1" layer="37"/>
@@ -2179,7 +2179,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="TP_13.56M" library="testpad" package="TP06SQ" value="TPTP06SQ" x="16.3" y="1.4" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="16.3" y="-0.505" size="1" layer="37"/>
-<attribute name="NAME" x="15.9" y="0.1001" size="0.8128" layer="25"/>
+<attribute name="NAME" x="16.7" y="0.6001" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="16.046" y="1.019" size="0.0254" layer="27"/>
 </element>
 <element name="TP_TX_OUT" library="testpad" package="TP06SQ" value="TPTP06SQ" x="8.9" y="14.5" smashed="yes">

@@ -3267,13 +3267,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.7" y1="14.7" x2="8.6" y2="15.4" width="0.16" layer="1"/>
 </signal>
 <signal name="N$32">
-<contactref element="NFC1" pad="1"/>
 <contactref element="U2" pad="4"/>
 <wire x1="8.2" y1="15.4" x2="8.1" y2="14.7" width="0.16" layer="1"/>
 <wire x1="8.1" y1="14.7" x2="7.7" y2="14.1" width="0.254" layer="1"/>
 <wire x1="7.7" y1="14.1" x2="4.495209375" y2="14" width="0.254" layer="1"/>
 <wire x1="4.495209375" y1="14" x2="4.31560625" y2="14.07439375" width="0.254" layer="1" curve="-44.999502"/>
-<wire x1="4.31560625" y1="14.07439375" x2="2.88" y2="15.51" width="0.254" layer="1"/>
+<contactref element="NFC1" pad="1"/>
+<wire x1="4.31560625" y1="14.07439375" x2="2.88" y2="15.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="CTX1" pad="3"/>

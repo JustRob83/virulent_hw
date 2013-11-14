@@ -75,6 +75,11 @@
 <wire x1="58.2" y1="0" x2="58.2" y2="43" width="0" layer="20"/>
 <wire x1="58.2" y1="43" x2="0" y2="43" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="43" width="0" layer="20"/>
+<text x="38.6" y="9.3" size="1.778" layer="21">VIRULENT</text>
+<text x="40.8" y="3.8" size="0.8128" layer="21">Robin Davis
+Rob Gaskell
+Nick Kosmicki
+Nic Redfield</text>
 </plain>
 <libraries>
 <library name="Virulent_HW">
@@ -2686,6 +2691,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="25.4" y="17.5" extent="1-16" drill="0.5"/>
 <contactref element="SW3" pad="1"/>
 <via x="45.2" y="14.7" extent="1-16" drill="0.5"/>
+<via x="34.5" y="12.68" extent="1-16" drill="0.5"/>
 <wire x1="8.8" y1="16" x2="8.6" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ENABLE">
@@ -3459,4 +3465,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

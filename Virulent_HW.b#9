@@ -2190,7 +2190,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="H1" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="53" y="5"/>
 <element name="H2" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="5" y="38"/>
 <element name="R30" library="Virulent_HW" package="R0402" value="10k" x="53.2" y="37.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.762" y="38.835" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
+<attribute name="NAME" x="51.862" y="38.935" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="SW3" library="Virulent_HW" package="17M2-G" value="BUTTON" x="55.8" y="39.2" smashed="yes">
 <attribute name="NAME" x="54.6" y="35.7" size="0.8128" layer="25"/>
@@ -2329,8 +2329,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="55.7" y1="30.405209375" x2="55.86181875" y2="30.33818125" width="1.016" layer="16" curve="-45.000553"/>
 <wire x1="55.86181875" y1="30.33818125" x2="56.8" y2="29.4" width="1.016" layer="16"/>
 <contactref element="R30" pad="2"/>
+<wire x1="53.2" y1="37.05" x2="52.255209375" y2="37.05" width="1.016" layer="1"/>
+<wire x1="52.255209375" y1="37.05" x2="52.07560625" y2="36.97560625" width="1.016" layer="1" curve="44.999502"/>
+<wire x1="52.07560625" y1="36.97560625" x2="50.2" y2="35.1" width="1.016" layer="1"/>
 <wire x1="57.27439375" y1="30.62939375" x2="57.185" y2="30.74" width="0" layer="19" extent="1-1"/>
-<wire x1="53.2" y1="37.05" x2="53.994790625" y2="35.1" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="+5V">
 <contactref element="VR1" pad="4"/>
@@ -2604,9 +2606,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="2.6" y="25.7" extent="1-16" drill="0.5"/>
 <via x="6.24" y="23.8" extent="1-16" drill="0.5"/>
 <via x="47.34" y="1.68" extent="1-16" drill="0.5"/>
-<via x="45.44" y="40.6" extent="1-16" drill="0.5"/>
-<via x="48.8" y="38.9" extent="1-16" drill="0.5"/>
-<via x="46.88" y="36.5" extent="1-16" drill="0.5"/>
+<via x="54.64" y="35" extent="1-16" drill="0.5"/>
+<via x="50.5" y="37.3" extent="1-16" drill="0.5"/>
+<via x="46.88" y="41.1" extent="1-16" drill="0.5"/>
 <via x="38.94" y="41.38" extent="1-16" drill="0.5"/>
 <via x="29.8" y="36.48" extent="1-16" drill="0.5"/>
 <via x="16.1" y="41.38" extent="1-16" drill="0.5"/>
@@ -2683,7 +2685,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="17" y="16.6" extent="1-16" drill="0.5"/>
 <via x="25.4" y="17.5" extent="1-16" drill="0.5"/>
 <contactref element="SW3" pad="1"/>
-<wire x1="8.6" y1="17" x2="8.8" y2="16" width="0" layer="19" extent="1-1"/>
+<wire x1="8.8" y1="16" x2="8.6" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ENABLE">
 <contactref element="VR1" pad="5"/>

@@ -2685,6 +2685,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="17" y="16.6" extent="1-16" drill="0.5"/>
 <via x="25.4" y="17.5" extent="1-16" drill="0.5"/>
 <contactref element="SW3" pad="1"/>
+<via x="41.8" y="11.1" extent="1-16" drill="0.5"/>
+<wire x1="47.1" y1="9.5" x2="41.8" y2="11.1" width="0" layer="19" extent="1-1"/>
 <wire x1="8.8" y1="16" x2="8.6" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ENABLE">
@@ -3433,9 +3435,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="52.8" y="33.7" extent="1-16" drill="0.5"/>
 <wire x1="52.8" y1="33.7" x2="52.99656875" y2="33.66" width="0.254" layer="1" curve="45"/>
 <wire x1="52.99656875" y1="33.66" x2="54.2" y2="33.66" width="0.254" layer="1"/>
-</signal>
-<signal name="N$47">
-<via x="41.8" y="11.1" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="TRIGGER">
 <contactref element="U1" pad="10"/>
