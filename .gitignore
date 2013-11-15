@@ -32,9 +32,20 @@
 *.sql
 *.sqlite
 
-# Folders #
+# Project Files #
 #######################
-build
+*.epf
+*.mpf
+*.wlf
+*.mti
+*.b#*
+*.l#*
+*.s#*
+
+# Project Directories #
+#######################
+work/
+build/
 
 # OS generated files #
 ######################
