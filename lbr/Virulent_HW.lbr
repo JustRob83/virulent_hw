@@ -12005,15 +12005,6 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <text x="-3" y="1.5" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-0.31" y="1.14" radius="0.1360125" width="0.127" layer="21"/>
 </package>
-<package name="1008">
-<smd name="1" x="0" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R180"/>
-<smd name="P$2" x="0" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R180"/>
-<text x="-1.27" y="-2.54" size="1.016" layer="25" rot="R90">&gt;NAME</text>
-</package>
-<package name="L1008">
-<smd name="1" x="0" y="1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="2" x="0" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
-</package>
 </packages>
 <symbols>
 <symbol name="FRAME">
@@ -14155,20 +14146,6 @@ University</text>
 <pin name="CB@1" x="12.7" y="-10.16" length="short" rot="R180"/>
 <text x="-5.08" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.064" y="13.716" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="PUSH_BUTTON">
-<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="3.556" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="3.302" x2="-2.54" y2="3.81" width="0.254" layer="94" style="longdash"/>
-<wire x1="-2.54" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94" style="longdash"/>
-<wire x1="0" y1="3.81" x2="0" y2="3.302" width="0.254" layer="94" style="longdash"/>
-<pin name="1@1" x="-5.08" y="0" length="point"/>
-<pin name="2@2" x="2.54" y="0" length="point"/>
-<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -19746,38 +19723,6 @@ DIODES INC
 <connect gate="G$1" pin="NO1@10" pad="10"/>
 <connect gate="G$1" pin="NO2@3" pad="3"/>
 <connect gate="G$1" pin="VCC@7" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BUTTON" prefix="SW">
-<gates>
-<gate name="G$1" symbol="PUSH_BUTTON" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="17M2-G">
-<connects>
-<connect gate="G$1" pin="1@1" pad="1"/>
-<connect gate="G$1" pin="2@2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="L1008" prefix="L">
-<gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="L1008">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
