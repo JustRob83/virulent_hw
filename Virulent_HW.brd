@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -2107,7 +2107,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="9.365" y="32.222" size="0.64" layer="25" font="vector" ratio="12"/>
 </element>
 <element name="C3" library="rcl" package="C0402" value="0.1u" x="12.11" y="25.73" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.745" y="26.365" size="0.64" layer="25" rot="R270"/>
+<attribute name="NAME" x="12.745" y="25.865" size="0.64" layer="25" rot="R270"/>
 </element>
 <element name="R3" library="Virulent_HW" package="R0402" value="4.7k" x="9.92" y="25.16" smashed="yes">
 <attribute name="NAME" x="9.285" y="25.922" size="0.64" layer="25" font="vector" ratio="12"/>
@@ -2119,13 +2119,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="14.035" y="31.145" size="0.64" layer="25"/>
 </element>
 <element name="C16" library="rcl" package="C0402" value="2.2u" x="15.51" y="25.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="14.145" y="26.515" size="0.64" layer="25" rot="R270"/>
+<attribute name="NAME" x="14.395" y="26.265" size="0.64" layer="25" rot="R270"/>
 </element>
 <element name="C17" library="rcl" package="C0402" value="1n" x="14.5" y="34.46" smashed="yes">
-<attribute name="NAME" x="13.865" y="35.095" size="0.64" layer="25"/>
+<attribute name="NAME" x="14.365" y="33.095" size="0.64" layer="25"/>
 </element>
 <element name="C18" library="rcl" package="C0402" value="1n" x="14.52" y="28.26" smashed="yes">
-<attribute name="NAME" x="13.885" y="26.895" size="0.64" layer="25"/>
+<attribute name="NAME" x="13.385" y="27.145" size="0.64" layer="25"/>
 </element>
 <element name="C19" library="rcl" package="C0402" value="1n" x="14.44" y="21.06" smashed="yes">
 <attribute name="NAME" x="13.405" y="19.695" size="0.64" layer="25"/>
@@ -2161,7 +2161,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="4.025" y="20.482" size="0.64" layer="25" font="vector" ratio="12"/>
 </element>
 <element name="C13" library="rcl" package="C1210" value="250u" x="6.92" y="30.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.625" y="30.955" size="0.64" layer="25" rot="R270"/>
+<attribute name="NAME" x="4.625" y="29.955" size="0.64" layer="25" rot="R270"/>
 </element>
 <element name="R31" library="Virulent_HW" package="R0402" value="10k" x="37.98" y="26.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.218" y="26.145" size="0.64" layer="25" font="vector" ratio="12" rot="R90"/>
@@ -2211,7 +2211,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="16.8" y="12.0001" size="0.64" layer="25"/>
 </element>
 <element name="C32" library="rcl" package="C0402" value="470n" x="14.4" y="35.8" smashed="yes">
-<attribute name="NAME" x="13.765" y="36.435" size="0.64" layer="25"/>
+<attribute name="NAME" x="14.265" y="36.435" size="0.64" layer="25"/>
 </element>
 <element name="C33" library="rcl" package="C0402" value="470n" x="14.4" y="22.9" smashed="yes">
 <attribute name="NAME" x="13.565" y="23.535" size="0.64" layer="25"/>
@@ -2268,7 +2268,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="142-0711-821" x="0.2" y="28.2" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="0.2" y="28.2" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1019328" x="0.2" y="28.2" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.835" y="34.55" size="0.64" layer="25"/>
+<attribute name="NAME" x="0.835" y="29.55" size="0.64" layer="25"/>
 </element>
 <element name="H1" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="54.7" y="3.5"/>
 <element name="H2" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="3.5" y="39.5"/>
@@ -2657,7 +2657,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.50560625" y1="3.24439375" x2="26.58" y2="3.064790625" width="0.254" layer="1" curve="-44.999295"/>
 <wire x1="26.58" y1="3.064790625" x2="26.58" y2="2.04" width="0.254" layer="1"/>
 <wire x1="11.8" y1="15.55" x2="11.679290625" y2="15.5" width="0.16" layer="1" curve="-45"/>
-<wire x1="11.679290625" y1="15.5" x2="10.1" y2="15.5" width="0.16" layer="1"/>
 <via x="4.2" y="16.9" extent="1-16" drill="0.5"/>
 <via x="27.7" y="33.6" extent="1-16" drill="0.5"/>
 <via x="24.2" y="30.5" extent="1-16" drill="0.5"/>
@@ -2754,6 +2753,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="34.18" y="3.94" extent="1-16" drill="0.5"/>
 <via x="55" y="7.88" extent="1-16" drill="0.5"/>
 <via x="15.6" y="2.6" extent="1-16" drill="0.5"/>
+<wire x1="11.679290625" y1="15.5" x2="10.1" y2="15.5" width="0.16" layer="1"/>
 </signal>
 <signal name="5V_ENABLE">
 <contactref element="VR1" pad="5"/>
@@ -3159,8 +3159,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$7">
 <contactref element="C16" pad="2"/>
 <contactref element="PLL3" pad="1"/>
-<wire x1="15.51" y1="25.03" x2="17.2155" y2="25.13" width="0.254" layer="1"/>
-<wire x1="17.2155" y1="25.13" x2="17.3305" y2="25.015" width="0.254" layer="1"/>
+<wire x1="15.51" y1="25.03" x2="16.2155" y2="25.63" width="0.254" layer="1"/>
+<wire x1="16.2155" y1="25.63" x2="17.3305" y2="25.015" width="0.254" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="R29" pad="1"/>
@@ -3168,8 +3168,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="NFC1" pad="2"/>
 <wire x1="4.15" y1="21.81" x2="4.31" y2="21.65" width="0.254" layer="1"/>
 <wire x1="4.31" y1="21.65" x2="4.31" y2="20.02" width="0.254" layer="1"/>
-<wire x1="4.31" y1="20.02" x2="5.08" y2="19.25" width="0.254" layer="1"/>
 <wire x1="5.08" y1="19.25" x2="2.88" y2="17.51" width="0.254" layer="1"/>
+<wire x1="4.31" y1="20.02" x2="5.08" y2="19.25" width="0.254" layer="1"/>
 </signal>
 <signal name="PLL_R">
 <contactref element="PLL1" pad="8"/>
@@ -3565,8 +3565,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.7" y1="33.6" x2="37.7" y2="33.9" width="0.254" layer="1"/>
 <wire x1="37.7" y1="33.9" x2="38.1" y2="34.3" width="0.254" layer="1"/>
 <wire x1="38.1" y1="34.3" x2="38.8" y2="34.3" width="0.254" layer="1"/>
-<wire x1="41.1" y1="36.6" x2="40.6" y2="36.3" width="0.254" layer="1"/>
-<wire x1="38.8" y1="34.3" x2="40.6" y2="36.3" width="0" layer="19" extent="1-1"/>
+<wire x1="38.8" y1="34.3" x2="38.8" y2="34.5" width="0.254" layer="1"/>
+<wire x1="38.8" y1="34.5" x2="40.6" y2="36.3" width="0.254" layer="1"/>
 </signal>
 <signal name="PB1">
 <contactref element="U1" pad="15"/>
@@ -3614,12 +3614,12 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="3,1,7eb87cba7cba7eb8"/>
 <approved hash="3,1,42a040a240a242a0"/>
 <approved hash="3,1,b87fba7dba7db87f"/>
+<approved hash="4,1,6472bd95318ca609"/>
 <approved hash="4,1,3e55c18bcd0a4776"/>
 <approved hash="4,1,2dce5fc2f2d57292"/>
-<approved hash="4,1,6472bd95318ca609"/>
+<approved hash="4,1,15b69ba5e7726e60"/>
 <approved hash="4,1,e9a96722e46c9666"/>
 <approved hash="4,1,d7e098fca4d4eb18"/>
-<approved hash="4,1,15b69ba5e7726e60"/>
 <approved hash="4,16,6472bd95318ca609"/>
 <approved hash="4,16,3e55c18bcd0a4776"/>
 <approved hash="4,16,15b69ba5e7726e60"/>
