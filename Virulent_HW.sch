@@ -13508,6 +13508,10 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <approved hash="104,1,297.18,182.88,RGB1,B,N$21,,,"/>
 <approved hash="104,1,297.18,187.96,RGB1,V+,+3.3V,,,"/>
 <approved hash="104,1,35.56,193.04,SPST1,VCC,+5V,,,"/>
+<approved hash="104,1,31.75,134.62,CT1,A,N$26,,,"/>
+<approved hash="104,1,24.13,134.62,CT1,B,N$20,,,"/>
+<approved hash="104,1,73.66,129.54,NFC1,1,N$32,,,"/>
+<approved hash="104,1,53.34,129.54,NFC1,2,N$30,,,"/>
 <approved hash="113,1,220.743,129.409,JP1,,,,,"/>
 <approved hash="113,1,131.784,95.8935,T1,,,,,"/>
 <approved hash="113,1,131.784,92.0665,T2,,,,,"/>
