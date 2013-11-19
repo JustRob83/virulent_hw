@@ -12568,8 +12568,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="GND44" gate="1" x="381" y="119.38"/>
 <instance part="L1" gate="G$1" x="147.32" y="93.98" rot="R90"/>
 <instance part="X1" gate="G1" x="33.02" y="114.3" rot="R90"/>
-<instance part="H1" gate="G$1" x="365.76" y="88.9"/>
-<instance part="H2" gate="G$1" x="365.76" y="81.28"/>
+<instance part="H1" gate="G$1" x="370.84" y="88.9"/>
+<instance part="H2" gate="G$1" x="370.84" y="81.28"/>
 <instance part="GND16" gate="1" x="365.76" y="71.12"/>
 </instances>
 <busses>
@@ -13021,8 +13021,14 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <junction x="12.7" y="48.26"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="88.9" x2="365.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="88.9" x2="365.76" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="H1" gate="G$1" pin="MOUNT"/>
+<wire x1="365.76" y1="81.28" x2="365.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="88.9" x2="368.3" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="H2" gate="G$1" pin="MOUNT"/>
+<wire x1="365.76" y1="81.28" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
+<junction x="365.76" y="81.28"/>
 </segment>
 </net>
 <net name="5V_ENABLE" class="0">

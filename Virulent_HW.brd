@@ -2067,7 +2067,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="G1" library="battery" package="AB9V" value="AB9V" x="54.34" y="14.86" smashed="yes"/>
 <element name="JP1" library="Virulent_HW" package="1X06" value="" x="37.31" y="16.74" smashed="yes">
-<attribute name="NAME" x="37.2138" y="14.0688" size="0.64" layer="25" ratio="10"/>
+<attribute name="NAME" x="47.5362" y="16.9312" size="0.64" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="29.69" y="13.565" size="1.27" layer="27"/>
 </element>
 <element name="R18" library="Virulent_HW" package="R0402" value="22" x="30.96" y="20.45" smashed="yes" rot="R90">
@@ -2706,8 +2706,10 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.254" layer="1" isolate="0.254">
 <vertex x="0" y="0"/>
 <vertex x="35.4" y="0"/>
-<vertex x="35.4" y="9.7"/>
-<vertex x="50.3" y="9.7"/>
+<vertex x="35.4" y="6.7"/>
+<vertex x="36" y="6.7"/>
+<vertex x="36" y="9.75"/>
+<vertex x="50.3" y="9.75"/>
 <vertex x="50.3" y="0"/>
 <vertex x="58.2" y="0"/>
 <vertex x="58.2" y="42.9"/>
@@ -2754,6 +2756,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="55" y="7.88" extent="1-16" drill="0.5"/>
 <via x="15.6" y="2.6" extent="1-16" drill="0.5"/>
 <wire x1="11.679290625" y1="15.5" x2="10.1" y2="15.5" width="0.16" layer="1"/>
+<contactref element="H1" pad="B2,8"/>
+<contactref element="H2" pad="B2,8"/>
 </signal>
 <signal name="5V_ENABLE">
 <contactref element="VR1" pad="5"/>
